@@ -1,0 +1,17 @@
+#intro-h1 {
+  margin-bottom: 0;
+}
+#intro-h2 {
+  margin-top: 0;
+  overflow-wrap: break-word;
+}
+
+#intro p:first-of-type {
+  margin-bottom: 0;
+}
+#intro p:last-of-type {
+  margin-top: 0;
+}
+#intro {
+  position: relative;
+}

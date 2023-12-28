@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="main.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="nav-flex">
+          <img
+            src="assets/logo.svg"
+            alt="portfolio-logo"
+            width="45"
+            height="43"
+          />
+
+          <ul class="nav-links">
+            <li><a class="btn btn--nav" href="#sobre-mim">Sobre mim</a></li>
+
+            <li><a class="btn btn--nav" href="#portfolio">Portfólio</a></li>
+            <li><a class="btn btn--nav" href="#habilidades">Habilidades</a></li>
+
+            <li><a class="btn btn--raised" href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+      <button aria-label="Ativar modo escuro" id="toggle-theme">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          enable-background="new 0 0 24 24"
+          height="24px"
+          viewBox="0 0 24 24"
+          width="24px"
+          fill="var(--light-icon)"
+        >
+          <rect fill="none" height="24" width="24" />
+          <path
+            d="M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36c-0.98,1.37-2.58,2.26-4.4,2.26 c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"
+          />
+        </svg>
+      </button>
+    </nav>
+    <main>
+      <section
+        class="layout-section"
+        aria-describedby="intro-h1 intro-h2"
+        id="intro"
+      >
+        <div class="container">
+          <h1 id="intro-h1" class="title--lg">Matheus Riskalla</h1>
+          <h2
+            id="intro-h2"
+            class="title"
+            style="text-transform: uppercase; margin-top: 15px"
+          ></h2>
+          <p class="text--xl">
+            Sou estudante de Análise e Desenvolvimento de Sistemas na Unisinos e
+            resido em Porto Alegre.
+          </p>
+        </div>
+        <button aria-label="role para baixo" id="scroll-down">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="48px"
+            viewBox="0 0 24 24"
+            width="48px"
+          >
+            <path d="M0 0h24v24H0V0z" fill="none" />
+            <path
+              d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+              stroke="var(--light-icon)"
+            />
+          </svg>
+        </button>
+      </section>
+      <section
+        id="sobre-mim"
+        aria-labelledby="heading-sobre-mim"
+        class="layout-section"
+      >
+        <div class="container">
+          <h2 class="title--sm layout-section-title" id="heading-sobre-mim">
+            Sobre mim
+          </h2>
+          <div class="layout-grid-half">
+            <p class="text--lg">
+              Com 28 anos, atualmente estudo Análise e Desenvolvimento de
+              Sistemas na Unisinos. Anteriormente, cursei jornalismo na UFRGS e
+              trabalhei na área pela Câmara Municipal e pela Jardine
+              Comunicação. No início de 2023, aprofundei-me nos estudos em
+              Javascript, levando-me a uma matrícula no curso atual.
+            </p>
+            <p class="text--lg">
+              Meu objetivo é ingressar no mercado de TI, buscando aprimorar
+              minhas habilidades nos próximos anos para me tornar um programador
+              completo. Aguardo as oportunidades futuras nesta indústria
+              dinâmica e estou comprometido em seguir meu objetivo profissional
+              na área de TI. Caso deseje discutir mais detalhes, convido-o a
+              revisar meu
+              <a href="#portfolio">portfólio</a> ou a entrar em
+              <a href="#contato">contato</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="layout-section"
+        id="portfolio"
+        aria-labelledby="heading-portfolio"
+      >
+        <div class="container">
+          <h2 id="heading-portfolio" class="layout-section-title title--sm">
+            Portfolio
+          </h2>
+          <div class="portfolio">
+            <img
+              src="assets/avatardesigner.png"
+              width="300"
+              height="300"
+              alt="Foto Projeto Avatar Designer"
+              class="portfolio-screenshot"
+            />
+            <div>
+              <h3 class="title">Avatar Designer</h3>
+              <p class="text">
+                Projeto feito com HTML, Bootstrap e Javascript em que o usuário
+                escolhe uma das imagens pré-selecionadas ou faz o upload de uma,
+                e então pode mudar o raio e a cor da borda e fazer o download.
+              </p>
+              <p>
+                <a
+                  class="btn btn--line"
+                  target="_blank"
+                  href="https://avatar-designer101.netlify.app/"
+                  >Netlify</a
+                >
+                <a
+                  class="btn btn--line"
+                  target="_blank"
+                  href="https://github.com/riskalla78/avatar-designer"
+                  >Github</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="portfolio">
+            <img
+              src="assets/currencymaster.png"
+              width="300"
+              height="300"
+              alt="Projeto Currency Master"
+              class="portfolio-screenshot"
+            />
+            <div>
+              <h3 class="title">Currency Master</h3>
+              <p class="text">
+                Aplicativo Web feito com HTML, Bootstrap, Javascript, a API
+                Exchange Rate e a Flag CDN. O usuário seleciona uma moeda base e
+                uma moeda alvo e pode então fazer a conversão em tempo real.
+              </p>
+              <p>
+                <a
+                  class="btn btn--line"
+                  target="_blank"
+                  href="https://currencymaster.netlify.app/"
+                  >Netlify</a
+                >
+                <a
+                  class="btn btn--line"
+                  target="_blank"
+                  href="https://github.com/riskalla78/currency-master"
+                  >Github</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="portfolio">
+            <img
+              src="assets/portfolio.png"
+              width="300"
+              height="300"
+              alt="Projeto Portfólio"
+              class="portfolio-screenshot"
+            />
+            <div>
+              <h3 class="title">Portfólio</h3>
+              <p class="text">
+                Feito em HTML, CSS e Javascript puro. Hospedado no Netlify,
+                possui a opção de me contatar, e um botão para ligar e desligar
+                o Dark Theme, de acordo com as preferências do usuário.
+              </p>
+              <p>
+                <a
+                  class="btn btn--line"
+                  target="_blank"
+                  href="https://portfolio-matheusriskalla.netlify.app/"
+                  >Netlify</a
+                >
+                <a
+                  class="btn btn--line"
+                  target="_blank"
+                  href="https://github.com/riskalla78/portfolio"
+                  >Github</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="habilidades"
+        class="layout-section"
+        aria-labelledby="heading-habilidades"
+      >
+        <div class="container">
+          <h2 id="heading-habilidades" class="title--sm layout-section-title">
+            Habilidades
+          </h2>
+          <ul class="tags">
+            <li class="tag">Javascript</li>
+            <li class="tag">Html</li>
+            <li class="tag">Css</li>
+            <li class="tag">Bootstrap</li>
+            <li class="tag">Design gráfico</li>
+            <li class="tag">SQL</li>
+            <li class="tag">Texto</li>
+            <li class="tag">Design gráfico</li>
+          </ul>
+        </div>
+      </section>
+      <section
+        id="contato"
+        class="layout-section"
+        aria-labelledby="heading-contato"
+      >
+        <div class="container">
+          <h2 id="heading-contato" class="title--sm layout-section-title">
+            Contato
+          </h2>
+          <div class="contato-form">
+            <address>
+              <div class="adrss">
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 2.5C10.1625 2.5 6.25 6.4125 6.25 11.25C6.25 17.8125 15 27.5 15 27.5C15 27.5 23.75 17.8125 23.75 11.25C23.75 6.4125 19.8375 2.5 15 2.5ZM15 14.375C13.275 14.375 11.875 12.975 11.875 11.25C11.875 9.525 13.275 8.125 15 8.125C16.725 8.125 18.125 9.525 18.125 11.25C18.125 12.975 16.725 14.375 15 14.375Z"
+                    fill="var(--light-icon)"
+                  />
+                </svg>
+                <div class="adrss-txt">
+                  <p style="margin: 0" class="text">Local</p>
+                  <p style="margin: 0" class="text--bold">
+                    Porto Alegre,<br />
+                    Rio Grande do Sul
+                  </p>
+                </div>
+              </div>
+              <div class="adrss">
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M25 5H5C3.625 5 2.5125 6.125 2.5125 7.5L2.5 22.5C2.5 23.875 3.625 25 5 25H25C26.375 25 27.5 23.875 27.5 22.5V7.5C27.5 6.125 26.375 5 25 5ZM25 10L15 16.25L5 10V7.5L15 13.75L25 7.5V10Z"
+                    fill="var(--light-icon)"
+                  />
+                </svg>
+                <div class="adrss-txt">
+                  <p style="margin: 0" class="text">Email</p>
+                  <a
+                    style="margin: 0"
+                    class="text--bold"
+                    href="mailto:matheus.riskalla78@gmail.com"
+                  >
+                    matheus.riskalla78@gmail.com
+                  </a>
+                </div>
+              </div>
+              <div class="adrss">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  width="32px"
+                  height="32px"
+                >
+                  <path
+                    d="M 7.5 1 C 3.914063 1 1 3.914063 1 7.5 C 1 8.796875 1.417969 9.984375 2.070313 11 L 0.953125 14.121094 L 4.429688 13.140625 C 5.351563 13.644531 6.375 14 7.5 14 C 11.085938 14 14 11.085938 14 7.5 C 14 3.914063 11.085938 1 7.5 1 Z M 7.5 2 C 10.542969 2 13 4.457031 13 7.5 C 13 10.542969 10.542969 13 7.5 13 C 6.457031 13 5.492188 12.707031 4.65625 12.203125 L 4.472656 12.089844 L 2.546875 12.628906 L 3.171875 10.894531 L 3.019531 10.683594 C 2.378906 9.78125 2 8.6875 2 7.5 C 2 4.457031 4.457031 2 7.5 2 Z M 5.0625 4 C 4.949219 4 4.761719 4.046875 4.601563 4.234375 C 4.445313 4.417969 4 4.867188 4 5.78125 C 4 6.691406 4.617188 7.574219 4.703125 7.699219 C 4.789063 7.824219 5.917969 9.695313 7.644531 10.5 C 8.054688 10.691406 8.375 10.804688 8.625 10.890625 C 9.039063 11.03125 9.414063 11.011719 9.710938 10.964844 C 10.042969 10.910156 10.730469 10.515625 10.875 10.082031 C 11.015625 9.648438 11.019531 9.277344 10.972656 9.199219 C 10.933594 9.121094 10.816406 9.074219 10.644531 8.984375 C 10.472656 8.890625 9.625 8.441406 9.46875 8.382813 C 9.3125 8.316406 9.195313 8.289063 9.078125 8.472656 C 8.964844 8.660156 8.636719 9.078125 8.535156 9.199219 C 8.433594 9.324219 8.335938 9.339844 8.164063 9.246094 C 7.988281 9.152344 7.433594 8.957031 6.777344 8.324219 C 6.265625 7.832031 5.917969 7.226563 5.820313 7.039063 C 5.71875 6.851563 5.808594 6.753906 5.894531 6.664063 C 5.972656 6.578125 6.066406 6.445313 6.152344 6.335938 C 6.238281 6.230469 6.265625 6.148438 6.324219 6.027344 C 6.382813 5.902344 6.355469 5.792969 6.3125 5.703125 C 6.265625 5.609375 5.921875 4.695313 5.78125 4.324219 C 5.640625 3.964844 5.496094 4.011719 5.390625 4.007813 C 5.292969 4 5.175781 4 5.0625 4 Z"
+                    fill="var(--light-icon)"
+                  />
+                </svg>
+
+                <div class="adrss-txt">
+                  <p style="margin: 0" class="text">Telefone</p>
+                  <a style="margin: 0" class="text--bold" href="tel:51993734652"
+                    >(51)993734652</a
+                  >
+                </div>
+              </div>
+            </address>
+
+            <form action="/successfold/success.html" name="contact" netlify>
+              <label class="sr-only" for="contato-nome">Nome</label>
+              <input
+                required
+                class="input"
+                id="contato-nome"
+                type="text"
+                autocomplete="name"
+                placeholder="Escreva seu nome"
+                name="name"
+              />
+              <label class="sr-only" for="contato-email">Email</label>
+              <input
+                required
+                class="input"
+                id="contato-email"
+                type="email"
+                autocomplete="email"
+                placeholder="Escreva seu email"
+                name="email"
+              />
+              <label class="sr-only" for="contato-msg">Mensagem</label>
+              <textarea
+                required
+                class="input"
+                id="contato-msg"
+                placeholder="Escreva sua mensagem"
+                name="msg"
+              ></textarea>
+              <div class="form-btn">
+                <button class="btn btn--raised" type="submit">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="footer-left">
+            <img src="assets/logo.svg" alt="Logo" width="45" height="43" />
+            <div>
+              <p class="text--bold f-name">&copy; 2023 Matheus Riskalla</p>
+              <p class="f-rights">
+                <small class="text--sm">Todos os direitos reservados.</small>
+              </p>
+            </div>
+          </div>
+          <div class="footer-right">
+            <p class="text--sm">@matheusriskalla no Instagram</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              width="32px"
+              height="32px"
+            >
+              <path
+                d="M 4.773438 1 C 2.695313 1 1 2.695313 1 4.773438 L 1 10.230469 C 1 12.304688 2.695313 14 4.773438 14 L 10.230469 14 C 12.304688 14 14 12.304688 14 10.226563 L 14 4.773438 C 14 2.695313 12.304688 1 10.226563 1 Z M 4.773438 2 L 10.226563 2 C 11.765625 2 13 3.234375 13 4.773438 L 13 10.226563 C 13 11.765625 11.765625 13 10.230469 13 L 4.773438 13 C 3.234375 13 2 11.765625 2 10.230469 L 2 4.773438 C 2 3.234375 3.234375 2 4.773438 2 Z M 11.5 3 C 11.222656 3 11 3.222656 11 3.5 C 11 3.777344 11.222656 4 11.5 4 C 11.777344 4 12 3.777344 12 3.5 C 12 3.222656 11.777344 3 11.5 3 Z M 7.5 4 C 5.574219 4 4 5.574219 4 7.5 C 4 9.425781 5.574219 11 7.5 11 C 9.425781 11 11 9.425781 11 7.5 C 11 5.574219 9.425781 4 7.5 4 Z M 7.5 5 C 8.886719 5 10 6.113281 10 7.5 C 10 8.886719 8.886719 10 7.5 10 C 6.113281 10 5 8.886719 5 7.5 C 5 6.113281 6.113281 5 7.5 5 Z"
+                fill="var(--light-icon)"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.footer-right ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+.f-name {
+  margin: 0;
+}
+.f-rights {
+  margin: 0;
+}

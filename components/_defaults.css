@@ -1,0 +1,18 @@
+a {
+  color: var(--anchor-color);
+  opacity: 0.8;
+  transition: opacity 200ms;
+}
+a:hover {
+  opacity: 1;
+}
+
+p {
+  color: var(--gray-light);
+}
+strong {
+  font-weight: inherit;
+}
+address {
+  font-style: normal;
+}
